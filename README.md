@@ -41,7 +41,7 @@ Phishing_Detection_ML_FastAPI/
 
 ### 1. Clone the Repository
 ```powershell
-git clone <repo-url>
+git clone https://github.com/selvin-paul-raj/Phishing_Detection_ML_FastAPI
 cd Phishing_Detection_ML_FastAPI
 ```
 
