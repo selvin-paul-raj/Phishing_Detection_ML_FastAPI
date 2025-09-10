@@ -56,16 +56,17 @@ Install required packages:
 pip install -r requirements.txt
 ```
 
-### 3. Train the Model (Optional)
-If you want to retrain the model:
-- Use `models/model_training.py` or `model_training_notebook.ipynb` with `data/Website Phishing.csv`.
-- Save the trained model as `models/RFC_best_model.pkl`.
+3. **Run the Application**
+   ```bash
+   # Start the FastAPI backend (in one terminal)
+   uvicorn app.app:app --host 0.0.0.0 --port 8000
+   
+   # Start the Streamlit frontend (in another terminal)
+   streamlit run app/appUI.py
+   ```
 
-### 4. Run the API
-```powershell
-python app/app.py
-```
-Access the API docs at: [http://localhost:8000/docs](http://localhost:8000/docs)
+4. **Access the Application**
+   - Streamlit UI: http://localhost:8501
 
 ### 5. Docker Deployment (Optional)
 To run with Docker:
